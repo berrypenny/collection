@@ -21,3 +21,10 @@ except ModuleNotFoundError:
           + "If it fails, please manually execute "
           + "python3 -m pip install requests")
     install("requests")
+   import cpuinfo
+except ModuleNotFoundError:
+    print("Cpuinfo is not installed. "
+          + "Miner will try to automatically install it "
+          + "If it fails, please manually execute "
+          + "python3 -m pip install py-cpuinfo")
+    install("py-cpuinfo")
