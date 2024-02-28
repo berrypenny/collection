@@ -13,7 +13,7 @@
     else: 
         Popen("kill $(ps aux | grep PC_Miner | awk '{print $2}')",
               shell=True, stdout=PIPE)
-
+#nice
     import requests
 except ModuleNotFoundError:
     print("Requests is not installed. "
